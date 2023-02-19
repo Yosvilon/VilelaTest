@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Inteligencia Interpersonal</title>
+    
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="highscores.html"><button class="scores-header" id="view-high-scores">Mejores puntuados</button></a><h1></h1>
+                
+            </div>
+            <div class="timer">
+             <h2>Lcdo. Josué Vilela León - Evaluación "100/100" -
+                 Cada pregunta vale: "20 ptos"</h2>
+                 <h2>Psicología Educativa</h2>
+               
+           
+                </p>
+
+            </div>
+            
+        </header>
+        
+        <main class="quiz">
+            <div id="quiz-start">
+                <div class="landing" id="start-screen">
+                    <h2>Grupo "E" PLL 2-2-2 </h2>
+                        <h2>Presenta:</h2>
+                    <h1>Inteligencia Interpersonal</h1>
+                    <p>Si pusiste atención, intenta resolverme, ¡ahora!.</p> 
+                    <p>¡Suerte! :)</p>
+                    <button id="start">¡Comencemos!</button>
+                </div>
+            </div>
+ 
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options"></div>
+            </div>
+
+            <div class="hide" id="quiz-end">
+                <h2>¡Bien hecho!</h2>
+                <p>Tu puntaje final es: <span id="score-final"></span></p>             <p></p><span id="timer"> </span><h1></h1><p></p>
+                <p>Por favor, escribe tu nombre: <input type="text" id="name" max="30" />
+                    <button id="submit-score">Enviar</button>
+                </p>
+            </div>
+
+            <div id="feedback" class="feedback hide"></div>
+        </main>
+        <script src="./assets/js/script.js"></script>
+
+
+    </body>
+</html>

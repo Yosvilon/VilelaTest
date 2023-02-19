@@ -1,0 +1,157 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+/* Definir el tamaño de fuente de todos los títulos h1 */
+h1 {
+    font-size: 50px;
+  }
+  
+  /* Definir el tamaño de fuente de un título h2 utilizando ems */
+  h2 {
+    font-size: 110%;
+  }
+  
+  /* Definir el tamaño de fuente de un título h3 utilizando porcentajes */
+  h3 {
+    font-size: 150%;
+  }
+  
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+  
+  /* Definir diferentes tamaños de margen en diferentes lados utilizando valores separados por espacios */
+  body {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 200px;
+    margin-left: 10px;
+  }
+  
+
+
+
+.quiz, .scores {
+    margin: 100px auto 0 auto;
+    max-width: 400px;
+}
+
+p {
+    margin: 15px 15px;
+}
+
+/**/
+
+.landing {
+    text-align: center;
+}
+
+.scoresHeader {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.timer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #515052;
+    border-radius: 5px;
+    border: 0;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: #9e99a1;
+}
+
+.options button {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: 125%;
+}
+
+.hide {
+    display: none;
+}
+
+.feedback {
+    font-style: bold;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 15px;
+    color: rgb(231, 231, 231);
+    border-top: 2px solid #4B0082;
+}
+
+
+body {
+    background-color: rgb(153, 255, 238);
+
+}
+  
+h3 {
+    text-align: center;
+  }
+
+
+  #timer {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    font-size: 50px;
+     color: rgb(255, 0, 0);
+     font-weight: bold;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-top: 20px;
+     margin-right: 10px;
+     margin-bottom: 200px;
+     margin-left: 10px;
+  }
+  #timer {
+    /* Estilos adicionales para el elemento idtimer si es necesario */
+  }
+
+
+ol {
+    padding-left: 15px;
+    max-height: 600px;
+    overflow: auto;
+}
+  
+  li {
+    padding: 5px;
+    list-style: decimal inside none;
+}
+  
+  li:nth-child(odd) {
+    background-color: #dfdae7;
+}
+
+/* This will be applied on any screen smaller than 768px */
+@media screen and (max-width: 768px) {
+
+}
+
+/* This will be applied on any screen smaller than 575px */
+@media screen and  (max-width: 575px) {
+
+}
