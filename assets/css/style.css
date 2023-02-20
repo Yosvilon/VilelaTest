@@ -2,21 +2,26 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+.feedback.El {
+  word-wrap: break-word;
+  width: 1000%;
+}
+
 .caja {
   border: 0px solid black; /* Aquí se define un borde sólido de 1px de ancho y color negro */
   padding: 10px; /* Aquí se agrega un espacio de relleno de 10 píxeles entre el borde y el contenido */
-  background-color: rgba(255, 255, 255, 0.7); /* Aquí se define un color de fondo blanco con una opacidad del 70% */
+  background-color: rgba(255, 255, 255, 0.815); /* Aquí se define un color de fondo blanco con una opacidad del 70% */
   box-shadow: 2px 2px 4px rgba(0, 119, 255, 0.3); /* Aquí se agrega una sombra con un desplazamiento de 2px hacia la derecha y hacia abajo, un radio de 4px y un color negro con una opacidad del 30% */
   text-align: center; /* Aquí se centra el contenido del cuadro */
-
+  
 }
 
 
 .caja2 {
   border: 0px solid black; /* Aquí se define un borde sólido de 1px de ancho y color negro */
   padding: 10px; /* Aquí se agrega un espacio de relleno de 10 píxeles entre el borde y el contenido */
-  background-color: rgba(255, 255, 255, 0.7); /* Aquí se define un color de fondo blanco con una opacidad del 70% */
-  box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3); /* Aquí se agrega una sombra con un desplazamiento de 2px hacia la derecha y hacia abajo, un radio de 4px y un color negro con una opacidad del 30% */
+  background-color: rgba(255, 232, 158, 0.767); /* Aquí se define un color de fondo blanco con una opacidad del 70% */
+  box-shadow: 2px 2px 4px rgba(0, 255, 221, 0.3); /* Aquí se agrega una sombra con un desplazamiento de 2px hacia la derecha y hacia abajo, un radio de 4px y un color negro con una opacidad del 30% */
   text-align: center; /* Aquí se centra el contenido del cuadro */
   width: auto; /* Aquí se establece el ancho de la caja al 100% del ancho de su contenedor */
   margin: 0 auto; /* Aquí se centra la caja horizontalmente en su contenedor */
@@ -41,13 +46,18 @@ h1 {
     font-size: 50px;
     color: #000000; 
     margin: center;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    display: flex;
   }
   
   /* Definir el tamaño de fuente de un título h2 utilizando ems */
   h2 {
     font-size: 110%;
     color: #000000;
-    margin: center; 
+    margin: center;
+    padding-top: 3rem;
+    padding-left: 2rem; 
   }
   
   /* Definir el tamaño de fuente de un título h3 utilizando porcentajes */
@@ -66,9 +76,19 @@ h1 {
     color: #000000; 
     font-size: 150%;
     box-shadow: 4px 8px 8px rgba(255, 0, 0, 0.3); /* Aquí se agrega una sombra con un desplazamiento de 2px hacia la derecha y hacia abajo, un radio de 4px y un color negro con una opacidad del 30% */
-
-
-  }
+    position: relative;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    background-color: rgb(153, 255, 238);
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 100%;
+      margin: 0;
+      padding: 0 20px;
+    }
+    
   
   .texto {
     display: flex;
@@ -80,11 +100,6 @@ h1 {
   }
   
 
-
-  body {
-    position: relative;
-    margin: auto;
-  }
   .sect {
     width: 100%;
     min-height: 500px;
@@ -103,21 +118,12 @@ h1 {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 10%;
-    min-height: 10%;
-    transform: translateX(calc((10% - 10vw) / 2));
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
     z-index: -2;
   }
-  h1 {
-    margin: 0;
-    padding-top: 3rem;
-    padding-left: 2rem;
-  }
-  h2 {
-    margin: 0;
-    padding-top: 3rem;
-    padding-left: 2rem;
-  }
+
 
 /*FONDO VIDEO
   
@@ -204,12 +210,6 @@ input[type="text"] {
     color: rgb(231, 231, 231);
     border-top: 2px solid #4B0082;
 }
-
-
-body {
-    background-color: rgb(153, 255, 238);
-
-}
   
 h3 {
     text-align: center;
@@ -229,10 +229,7 @@ h3 {
      margin-bottom: 200px;
      margin-left: 10px;
   }
-  #timer {
-    /* Estilos adicionales para el elemento idtimer si es necesario */
-  }
-
+  
 
 ol {
     padding-left: 15px;

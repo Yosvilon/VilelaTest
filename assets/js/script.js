@@ -6,16 +6,16 @@ var questions = [
 
       
         prompt: "¿A qué se refiere la inteligencia interpersonal?",
-        options: ["A)	Se refiere a la capacidad de una persona para comprender y comunicarse efectivamente con los demás, así como para comprender y trabajar con sus emociones, motivaciones y pensamientos. ", 
+        options: ["A)	Se refiere a la capacidad de una persona para comprender y comunicarse efectivamente con los demás, así como para comprender y trabajar con sus emociones, motivaciones y pensamientos.", 
         "B)	Cuando una persona que se trata a sí misma con amabilidad, pero no comprende sus propios errores ni la capacidad para perdonarse. ", 
         "C)	Se refiere a desarrollar una buena capacidad de trabajo en equipo implica poder tomar en cuenta solo las ideas de uno mismo. ", 
         "D)	A que permitirán tener una mejor capacidad de resolución de conflictos a través de estrategias creativas. "],
-        answer: "A)	Se refiere a la capacidad de una persona para comprender y comunicarse efectivamente con los demás, así como para comprender y trabajar con sus emociones, motivaciones y pensamientos. "
+        answer: "A)	Se refiere a la capacidad de una persona para comprender y comunicarse efectivamente con los demás, así como para comprender y trabajar con sus emociones, motivaciones y pensamientos."
     },
 
     {
         prompt: "¿En que año Howard Gardner propuso la Teoría de las Inteligencias Múltiples? ",
-        options: ["A) En 1988 ", 
+        options: ["A) En 1988", 
         "B) En 1938", 
         "C) En 1993", 
         "D) En 1983"],
@@ -26,19 +26,19 @@ var questions = [
     prompt: "	¿Qué es la empatía? ",
     options: ["A)	Es la competencia o habilidades que dicho individuo alcanza.", 
     "B)	Se refiere a lo que una persona puede comunicar sin palabras, como el lenguaje corporal o el tono de voz. ", 
-    "C)	Es la capacidad de una persona para comprender y experimentar los sentimientos y emociones de otra persona. ", 
+    "C)	Es la capacidad de una persona para comprender y experimentar los sentimientos y emociones de otra persona.", 
     "D)	Es la que implica poder hacer frente a los problemas de escasez de información. "],
-    answer: "C)	Es la capacidad de una persona para comprender y experimentar los sentimientos y emociones de otra persona. "
+    answer: "C)	Es la capacidad de una persona para comprender y experimentar los sentimientos y emociones de otra persona."
     },
 
 
     {
       prompt: " ¿Qué son las destrezas? ",
-      options: ["A)	Son competencias o habilidades que dicho individuo alcanzó. ", 
+      options: ["A)	Son competencias o habilidades que dicho individuo alcanzó.", 
       "B)	Es la capacidad de una persona para comprender y experimentar los sentimientos y emociones de otra persona. ", 
       "C)	Es la que implica poder hacer frente a los problemas de escasez de información.  ", 
       "D)	A que permitirán tener una mejor capacidad de resolución de conflictos a través de estrategias creativas.  "],
-      answer: "A)	Son competencias o habilidades que dicho individuo alcanzó. "
+      answer: "A)	Son competencias o habilidades que dicho individuo alcanzó."
    },
    
    {
@@ -105,16 +105,19 @@ function questionClick() {
         time = 0;
       }
       timerEl.textContent = time;
-      feedbackEl.textContent = `Wrong! The correct answer was ${questions[currentQuestionIndex].answer}.`;
+      feedbackEl.textContent = `Sorry! La respuesta correcta era: ${questions[currentQuestionIndex].answer}`;
       feedbackEl.style.color = "red";
+      feedbackEl.style.shadow = "black";
+      feedbackEl.style.backgroundColor = "Ivory";
+
     } else {
-      feedbackEl.textContent = "Correct!";
+      feedbackEl.textContent = "Correcto, ¡qué listo eres!";
       feedbackEl.style.color = "green";
     }
     feedbackEl.setAttribute("class", "feedback");
     setTimeout(function() {
       feedbackEl.setAttribute("class", "feedback hide");
-    }, 2000);
+    }, 15000);
     currentQuestionIndex++;
     if (currentQuestionIndex === questions.length) {
       quizEnd();
