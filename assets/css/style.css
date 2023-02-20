@@ -1,21 +1,64 @@
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.caja {
+  border: 0px solid black; /* Aquí se define un borde sólido de 1px de ancho y color negro */
+  padding: 10px; /* Aquí se agrega un espacio de relleno de 10 píxeles entre el borde y el contenido */
+  background-color: rgba(255, 255, 255, 0.7); /* Aquí se define un color de fondo blanco con una opacidad del 70% */
+  box-shadow: 2px 2px 4px rgba(0, 119, 255, 0.3); /* Aquí se agrega una sombra con un desplazamiento de 2px hacia la derecha y hacia abajo, un radio de 4px y un color negro con una opacidad del 30% */
+  text-align: center; /* Aquí se centra el contenido del cuadro */
+  width: auto px;
+
 }
 
 
+.caja2 {
+  border: 0px solid black; /* Aquí se define un borde sólido de 1px de ancho y color negro */
+  padding: 10px; /* Aquí se agrega un espacio de relleno de 10 píxeles entre el borde y el contenido */
+  background-color: rgba(255, 255, 255, 0.7); /* Aquí se define un color de fondo blanco con una opacidad del 70% */
+  box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3); /* Aquí se agrega una sombra con un desplazamiento de 2px hacia la derecha y hacia abajo, un radio de 4px y un color negro con una opacidad del 30% */
+  text-align: center; /* Aquí se centra el contenido del cuadro */
+  width: auto; /* Aquí se establece el ancho de la caja al 100% del ancho de su contenedor */
+  margin: 0 auto; /* Aquí se centra la caja horizontalmente en su contenedor */
+  width: auto px;
+
+}
+
+.caja3 {
+  border: 0px solid black; /* Aquí se define un borde sólido de 1px de ancho y color negro */
+  padding: 10px; /* Aquí se agrega un espacio de relleno de 10 píxeles entre el borde y el contenido */
+  background-color: rgba(255, 255, 255, 0.7); /* Aquí se define un color de fondo blanco con una opacidad del 70% */
+  box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3); /* Aquí se agrega una sombra con un desplazamiento de 2px hacia la derecha y hacia abajo, un radio de 4px y un color negro con una opacidad del 30% */
+  text-align: center; /* Aquí se centra el contenido del cuadro */
+  width: 100%; /* Aquí se establece el ancho de la caja al 100% del ancho de su contenedor */
+  max-width: 1800px; /* Aquí se establece el ancho máximo de la caja a 800 píxeles */
+  margin: 0 auto; /* Aquí se centra la caja horizontalmente en su contenedor */
+  width: auto px;
+
+}
+
 /* Definir el tamaño de fuente de todos los títulos h1 */
 h1 {
+    display: flex;
     font-size: 50px;
+    color: #000000; 
+    margin: center;
   }
   
   /* Definir el tamaño de fuente de un título h2 utilizando ems */
   h2 {
     font-size: 110%;
+    color: #000000;
+    margin: center; 
   }
   
   /* Definir el tamaño de fuente de un título h3 utilizando porcentajes */
   h3 {
     font-size: 150%;
+    color: #000000;
+    margin: center;
+
   }
   
 
@@ -23,14 +66,68 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000000; 
+    font-size: 150%;
+    box-shadow: 4px 8px 8px rgba(255, 0, 0, 0.3); /* Aquí se agrega una sombra con un desplazamiento de 2px hacia la derecha y hacia abajo, un radio de 4px y un color negro con una opacidad del 30% */
+    width: auto px;
+
+
+  }
+  
+  .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; 
+    font-size: 75%;
+
   }
   
 
 
+  body {
+    position: relative;
+    margin: auto;
+  }
+  .sect {
+    width: 100%;
+    min-height: 500px;
+  }
+  #sect1,
+  #sect3 {
+    background-color: #3333337d;
+    color: #fff;
+  }
+  #sect2 {
+    background-color: #dddddd7d;
+    color: #333;
+  }
+  
+  video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 10%;
+    min-height: 10%;
+    transform: translateX(calc((10% - 10vw) / 2));
+    z-index: -2;
+  }
+  h1 {
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+  h2 {
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+
+/*FONDO VIDEO
   
   /* Definir diferentes tamaños de margen en diferentes lados utilizando valores separados por espacios */
   body {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 200px;
     margin-left: 10px;
@@ -62,9 +159,19 @@ p {
 
 .timer {
     position: absolute;
-    top: 15px;
+    top: 0px;
     right: 15px;
 }
+
+.barra {
+  width: infinite;
+  height: 50px;
+  background-color: #0077CC;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+
 
 button {
     display: inline-block;
